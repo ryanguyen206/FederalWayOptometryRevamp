@@ -2,17 +2,49 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+h1{
+    font-size:4rem;
 }
 
-body {
-  margin-bottom: 60px;
+:root {
+    --green: #2B6A4A;
+}
+
+
+.green {
+    color: var(--green);
+}
+
+.yeet {
+    color: var(--green);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+hr {
+   
+    border:none;
+    color:var(--green);
+}
+
+.yeet:hover {
+    color: #1f4d36;
+}
+
+.intro {
+    background-color: #f2f4ea;
+}
+
+.eye_pic {
+    width: 45%;
+    height: 100%;
 }
