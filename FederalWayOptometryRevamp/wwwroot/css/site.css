@@ -2,6 +2,12 @@ html {
   font-size: 14px;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +26,10 @@ h1{
 
 .green {
     color: var(--green);
+}
+
+.green-bg {
+    background-color: var(--green);
 }
 
 .yeet {
@@ -42,9 +52,115 @@ hr {
 
 .intro {
     background-color: #f2f4ea;
+    position:relative;
 }
 
 .eye_pic {
     width: 45%;
     height: 100%;
 }
+
+.learnBtn {
+    background-color: var(--green);
+    color: #f2f4ea;
+}
+.learnBtn:hover {
+     color: var(--green);
+     background-color: #f2f4ea;
+   
+}
+
+.contactBtn {
+    background-color: #f2f4ea;
+    color: var(--green);
+    border-color:var(--green);
+}
+
+.contactBtn:hover {
+    background-color: var(--green);
+    color: #f2f4ea;
+}
+
+.condition {
+    padding:5em 0em;
+}
+
+h2 {
+    font-size:4rem;
+}
+
+
+.yellow-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f1eaba;
+    border-radius:50%;
+}
+
+.top {
+    margin-bottom:6em;
+}
+
+.bottom {
+    padding:4em;
+}
+
+
+.bottom-container {
+    display: flex;
+
+}
+
+.bottom-item {
+    text-align:center;
+    flex-basis:100%;
+}
+
+
+ul li {
+    list-style:none;
+}
+
+
+.footer_yes {
+    padding:4em 0em;
+    margin-top: auto;
+}
+
+
+.submitBtn {
+    margin-top:1em;
+    background-color:var(--green);
+    padding: 0.5em 1em;
+    color: #f2f4ea;
+    border: none;
+    border-radius:5px;
+}
+
+
+#contact_us_h1 {
+    margin-top:2em;
+    font-size:2em;
+    text-align:center;
+}
+
+.form-group {
+    margin:0 auto;
+}
+
+
+.formContact {
+    margin-top:2em;
+    padding:2em;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+

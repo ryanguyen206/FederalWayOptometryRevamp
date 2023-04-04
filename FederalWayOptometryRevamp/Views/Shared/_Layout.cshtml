@@ -10,26 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="intro">
     <header>
         <nav class="mt-2 navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
             <div class="container-fluid">
-                <a class="yeet" asp-area="" asp-controller="Home" asp-action="Index">FederalWayOptometryRevamp</a>
+                <a class="yeet" asp-area="" asp-controller="Home" asp-action="Index">Federal Way Vision Center</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
                     <ul class="navbar-nav d-flex justify-content-evenly flex-grow-1">
                         <li class="nav-item">
                             <a class="yeet" asp-area="" asp-controller="Services" asp-action="Index">Services</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class=" yeet " asp-area="" asp-controller="Products" asp-action="Index">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" yeet " asp-area="" asp-controller="ContactUs" asp-action="Index">Contact us</a>
+                            <a class=" yeet " asp-area="" asp-controller="Persons" asp-action="Create">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -40,20 +41,53 @@
         <hr />
     </header>
 
-    <div>
-        <main>
+    <div >
+        <main class="page-container">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top">
-        <div class="container">
-            &copy; 2023 - FederalWayOptometryRevamp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+  
+
+
+
+
+
+    <footer class="footer_yes" data-aos="fade-right">
+        <div class="bottom-container">
+        <div class="recognized-by bottom-item ">
+            <h3>Recognized By</h3>
+            <ul>
+                <li>Checkbook</li>
+                <li>Marchon</li>
+            </ul>
+        </div>
+
+            <div class="featuted-on  bottom-item ">
+            <h3>Featured On</h3>
+            <ul>
+                <li>New Day</li>
+            </ul>
+        </div>
+
+            <div class="contact  bottom-item ">
+            <h3>About Us</h3>
+            <p>
+                Federal Way Vision Center
+                32717 1st Avenue South Suite #6
+                Federal Way, WA 98003 map
+                (253)838-5428
+            </p>
+        </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

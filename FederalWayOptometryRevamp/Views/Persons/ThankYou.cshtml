@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Person>
+@{
+    ViewData["Title"] = "PostPersons";
+}
+
+<h1>Thanks for filling out the form! We'll get to back you shortly.'</h1>
+
+@foreach(var person in Model)
+{
+    <p>Name: @person.FirstName Last Name: @person.LastName</p>
+
+}
+
